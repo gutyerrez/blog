@@ -1,0 +1,22 @@
+version: '3.9'
+
+volumes:
+  database:
+
+networks:
+  blog:
+
+services:
+  database:
+    container_name: postgres
+    image: postgres:latest
+    volumes:
+      - database:/home/blog/db
+    networks:
+      - blog
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=dsit5#Ioitu2irfjp
+      - POSTGRES_USER=root
+      - POSTGRES_DB=blog
