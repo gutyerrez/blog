@@ -17,6 +17,6 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_PASSWORD=dsit5#Ioitu2irfjp
+      - POSTGRES_PASSWORD=dsit5Ioitu2irfjp
       - POSTGRES_USER=root
       - POSTGRES_DB=blog
