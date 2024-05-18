@@ -3,7 +3,7 @@ export class User {
   public readonly name: string;
   public readonly email: string;
   public password: string;
-  public thumbnail: string;
+  public thumbnail: string | undefined;
   public readonly createdAt: Date;
   public updatedAt?: Date;
 
@@ -12,7 +12,7 @@ export class User {
     name: string,
     email: string,
     password: string,
-    thumbnail: string,
+    thumbnail: string | undefined,
     createdAt: Date,
     updatedAt?: Date
   ) {
