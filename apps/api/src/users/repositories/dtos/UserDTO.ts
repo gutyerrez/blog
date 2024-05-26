@@ -12,11 +12,11 @@ export type CreateUserDTO = {
   password: string;
 }
 
-export type UpdateUserDTO = {
+export type UpdateUserByIdDTO = {
   id: string;
   password: string;
 }
 
-export type DeleteUserDTO = {
+export type DeleteUserByIdDTO = {
   id: string;
 }
